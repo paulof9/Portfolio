@@ -1,0 +1,6 @@
+flask
+daisyui
+postcss
+tailwindcss
+npm
+autoprefixer
