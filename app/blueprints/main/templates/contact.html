@@ -3,59 +3,54 @@
 {% block title %}contact{% endblock %}
 
 {% block content %}
-
 <main class="max-w-5xl mx-auto my-10 p-6 bg-base-200 rounded-lg shadow-lg">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-    <!-- Lado esquerdo -->
+    <!-- Left -->
     <div class="flex flex-col gap-4">
-      <h1 class="text-2xl font-bold text-base-content">Available for select freelance opportunities</h1>
+      <h1 class="text-xl font-bold text-primary tracking-wide">Available for select freelance opportunities</h1>
       <p class="text-base-content">Send me an email or contact me via instant message!</p>
+      <form 
+        action="mailto:paulovfreire@yahoo.com"
+        method="POST"
+        enctype="text/plain"
+        class="space-y-4"
+      >
+        <fieldset class="bg-base-100 rounded-lg p-4 shadow-sm space-y-4">
+          <legend class="font-semibold text-lg text-base-content">Send a Email</legend>
 
-      <fieldset class="bg-base-100 rounded-lg p-4 shadow-sm space-y-4">
-        <legend class="font-semibold text-lg text-base-content">Page details</legend>
+          <div>
+            <label class="block text-sm font-medium text-primary">Subject</label>
+            <input type="text" name="Subject" class="input input-bordered w-full focus:outline-none" placeholder="What is your message about?" required />
+          </div>
 
-        <div>
-          <label class="block text-sm font-medium text-base-content">Title</label>
-          <input type="text" class="input input-bordered w-full focus:outline-none" placeholder="My awesome page" />
-        </div>
+          <div>
+            <label class="block text-sm font-medium text-primary">Message</label>
+            <textarea name="Message" rows="5" class="textarea textarea-bordered w-full focus:outline-none resize-none" placeholder="Type your message here..." required></textarea>
+          </div>
 
-        <div>
-          <label class="block text-sm font-medium text-base-content">bla</label>
-          <input type="text" class="input input-bordered w-full focus:outline-none" placeholder="my-awesome-page" />
-        </div>
-
-        <div>
-          <label class="block text-sm font-medium text-base-content">bla</label>
-          <input type="text" class="input w-full focus:outline-none" placeholder="Name" />
-        </div>
-
-        <div>
-          <button class="btn btn-primary w-fit">Responsive</button>
-        </div>
-      </fieldset>
+          <button type="submit" class="btn btn-primary w-fit">Send</button>
+        </fieldset>
+      </form>
     </div>
 
-    <!-- Lado direito -->
-    <section class="flex flex-col gap-6">
-      <fieldset class="bg-base-100 rounded-lg p-4 shadow-sm space-y-2">
-        <legend class="font-semibold text-lg text-base-content">Github</legend>
-        <input type="text" class="input input-bordered w-full focus:outline-none" placeholder="github.com/paulof9" />
-        <p class="text-sm text-gray-600">bla</p>
-      </fieldset>
-
-      <fieldset class="bg-base-100 rounded-lg p-4 shadow-sm space-y-2">
-        <legend class="font-semibold text-lg text-base-content">Linkedin</legend>
-        <input type="text" class="input input-bordered w-full focus:outline-none" placeholder="linkedin.com/in/paulof9" />
-        <p class="text-sm text-gray-600">bla</p>
-      </fieldset>
-
-      <fieldset class="bg-base-100 rounded-lg p-4 shadow-sm space-y-2">
-        <legend class="font-semibold text-lg text-base-content">other...</legend>
-        <input type="text" class="input input-bordered w-full focus:outline-none" placeholder="linkedin.com/in/paulof9" />
-        <p class="text-sm text-gray-600">bla</p>
-      </fieldset>
-    </section>
+    <!-- Right -->
+    <div class="flex items-center justify-center">
+      <section class="flex flex-col gap-6 w-full max-w-sm">
+        <fieldset class="bg-base-100 rounded-lg p-4 shadow-sm space-y-2">
+          <legend class="uppercase text-sm font-semibold tracking-wider text-primary">Github</legend>
+          <div class="input input-bordered w-full text-neutral-content"><a href="https://github.com/paulof9" target="_blank">github.com/paulof9</a></div>
+        </fieldset>
+        <fieldset class="bg-base-100 rounded-lg p-4 shadow-sm space-y-2">
+          <legend class="uppercase text-sm font-semibold tracking-wider text-primary">Linkedin</legend>
+          <div class="input input-bordered w-full text-neutral-content"><a href="https://www.linkedin.com/in/paulof9" target="_blank">linkedin.com/in/paulof9</a></div>
+        </fieldset>
+        <fieldset class="bg-base-100 rounded-lg p-4 shadow-sm space-y-2">
+          <legend class="uppercase text-sm font-semibold tracking-wider text-primary">Email</legend>
+          <div class="input input-bordered w-full text-neutral-content">paulovfreire@yahoo.com</div>
+        </fieldset>
+      </section>
+    </div>
 
   </div>
 </main>
