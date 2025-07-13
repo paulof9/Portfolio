@@ -1,0 +1,15 @@
+{% for repo in repos %}
+  <div class="card max-w-sm bg-base-100 card-xs shadow-sm">
+    <div class="card-body">
+      <div class="flex flex-row">
+        <h2 class="card-title text-base-content">{{ repo.name }}</h2> <p class="text-error text-sm">{{ repo.language }}</p>
+      </div>
+      
+      <div class="flex flex-row container">
+        <p class="text-base-content">{{ repo.description or " " }}</p>
+        <button class="btn btn-primary w-fit h-fit pl-2 pr-2 ml-2 mr-3"><a href="{{ repo.html_url}}" target="_blank">See</a></but-fitton>
+      </div>
+      
+    </div>
+  </div>
+{% endfor %}
