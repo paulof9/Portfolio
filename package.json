@@ -10,8 +10,9 @@
     "tailwindcss": "^4.1.11"
   },
   "scripts": {
-    "build": "npm run build:css && echo 'Build complete (no dist needed)'",
-    "build:css": "tailwindcss -i ./app/blueprints/main/static/src/input.css -o ./app/blueprints/main/static/src/output.css --minify",
-    "start": "python main.py"
-  }
+  "build": "npm run build:css && mkdir -p dist && echo '<!-- fake output -->' > dist/index.html",
+  "build:css": "tailwindcss -i ./app/blueprints/main/static/src/input.css -o ./app/blueprints/main/static/src/output.css --minify",
+  "start": "python main.py"
+}
+
 }
