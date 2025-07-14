@@ -1,4 +1,6 @@
 {
+  "installCommand": "npm install && python -m pip install -r requirements.txt",
+  "buildCommand": "npm run build",
   "builds": [
     {
       "src": "main.py",
