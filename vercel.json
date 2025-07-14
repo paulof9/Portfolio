@@ -16,5 +16,5 @@
     }
   ],
   "installCommand": "npm install",
-  "buildCommand": "echo '--- VERCEL CUSTOM BUILD COMMAND EXECUTING ---' && npm run build"
+  "buildCommand": "npm run build && echo '✅ Build terminou. Conteúdo do src:' && ls -lh ./app/blueprints/main/static/src"
 }
