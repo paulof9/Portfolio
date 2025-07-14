@@ -7,10 +7,10 @@
           <h2 class="text-base-content text-sm font-semibold capitalize truncate">
             {{ repo.name }}
           </h2>
-          <p class="text-base-content text-xs leading-snug capitalize">
+          <p class="text-base-content text-xs leading-snug capitalize text-justify">
             {{ repo.description or "No description available." }}
           </p>
-          <p class="text-error text-xs mt-1">{{ repo.language }}</p>
+          <p class="text-error text-xs mt-1">{{ repo.language or "?" }}</p>
         </div>
 
         <a href="{{ repo.html_url }}" target="_blank" class="btn btn-xs btn-primary self-center whitespace-nowrap">

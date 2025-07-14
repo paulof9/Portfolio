@@ -14,7 +14,8 @@ class ReposList:
 
     def get_repos(self):
         data_api = self.req_api()
-        return data_api
+        filter = [repo for repo in data_api if repo.get('language') is not None]
+        return filter
     
     def req_api_user(self):
         res = requests.get(f'https://api.github.com/users/{self._username}')
