@@ -8,5 +8,9 @@
     "daisyui": "^5.0.46",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11"
+  },
+  "scripts": {
+    "build:css": "npm tailwindcss -i ./app/blueprints/main/static/src/input.css -o ./app/blueprints/main/static/src/output.css --minify",
+    "build": "npm run build:css"
   }
 }
