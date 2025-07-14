@@ -1,6 +1,14 @@
 {
   "builds": [
     {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "installCommand": "npm install",
+        "buildCommand": "npm run build"
+      }
+    },
+    {
       "src": "main.py",
       "use": "@vercel/python"
     }
@@ -8,14 +16,11 @@
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "static/$1"
+      "dest": "app/blueprints/main/static/$1"
     },
     {
       "src": "/(.*)",
       "dest": "main.py"
     }
-  ],
-  "hooks": {
-    "build": "npm install && npm run build"
-  }
+  ]
 }
