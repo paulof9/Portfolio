@@ -16,5 +16,5 @@
     }
   ],
   "installCommand": "npm install",
-  "buildCommand": "npm run build"
+  "buildCommand": "echo '--- VERCEL CUSTOM BUILD COMMAND EXECUTING ---' && npm run build"
 }
