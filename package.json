@@ -10,7 +10,7 @@
     "tailwindcss": "^4.1.11"
   },
   "scripts": {
-    "build:css": "npm tailwindcss -i ./app/blueprints/main/static/src/input.css -o ./app/blueprints/main/static/src/output.css --minify",
-    "build": "npm run build:css"
-  }
+    "build": "npm run build:css",
+    "build:css": "tailwindcss -i ./app/blueprints/main/static/src/input.css -o ./app/blueprints/main/static/src/output.css --minify"
+}
 }
