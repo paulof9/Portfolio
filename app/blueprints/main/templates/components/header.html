@@ -1,11 +1,30 @@
-<header class="container mx-auto flex items-center justify-between pt-5 pb-10 font-mono">
-  <a href="/" class="text-xl font-bold text-primary">Paulo<span class="text-error">.</span></a>
-  <nav class="flex-grow flex justify-center ">
-      <ul class="flex space-x-8">
-        <li><a href="/" class="group text-error hover:text-error-content transition"><span class="text-primary group-hover:text-primary-content transition">//</span> home</a></li>
-        <li><a href="/projects" class="group text-error hover:text-error-content transition"><span class="text-primary group-hover:text-primary-content transition">//</span> projects</a></li>
-        <li><a href="/contact" class="group text-error hover:text-error-content transition"><span class="text-primary group-hover:text-primary-content transition">//</span> contact</a></li>
+<header class="w-full pt-5 pb-10 font-mono">
+  <div class="max-w-5xl mx-auto w-full grid grid-cols-1 sm:grid-cols-3 items-center px-4">
+    <a href="/" 
+       class="text-xl font-bold text-primary text-center sm:text-left">
+      Paulo<span class="text-error">.</span>
+    </a>
+
+    <nav class="flex justify-center sm:col-span-1 mt-4 sm:mt-0">
+      <ul class="flex flex-row flex-wrap justify-center gap-x-6">
+        <li>
+          <a href="/" class="group text-error hover:text-error-content transition">
+            <span class="text-primary group-hover:text-primary-content transition">//</span> home
+          </a>
+        </li>
+        <li>
+          <a href="/projects" class="group text-error hover:text-error-content transition">
+            <span class="text-primary group-hover:text-primary-content transition">//</span> projects
+          </a>
+        </li>
+        <li>
+          <a href="/contact" class="group text-error hover:text-error-content transition">
+            <span class="text-primary group-hover:text-primary-content transition">//</span> contact
+          </a>
+        </li>
       </ul>
-      <div class="w-10"></div> </div>
-  </nav>
+    </nav>
+
+    <div class="hidden sm:block"></div>
+  </div>
 </header>

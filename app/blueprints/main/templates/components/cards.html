@@ -1,15 +1,23 @@
 {% for repo in repos %}
-  <div class="card max-w-sm bg-base-100 card-xs shadow-sm">
-    <div class="card-body">
-      <div class="flex flex-row">
-        <h2 class="card-title text-base-content capitalize">{{ repo.name }}</h2> <p class="text-error text-sm">&nbsp;&nbsp;{{ repo.language }}</p>
+  <div class="card bg-base-100 shadow-sm hover:shadow-md transition duration-200">
+    <div class="card-body p-4">
+
+      <div class="flex items-center justify-between gap-3">
+        <div class="flex-1">
+          <h2 class="text-base-content text-sm font-semibold capitalize truncate">
+            {{ repo.name }}
+          </h2>
+          <p class="text-base-content text-xs leading-snug capitalize">
+            {{ repo.description or "No description available." }}
+          </p>
+          <p class="text-error text-xs mt-1">{{ repo.language }}</p>
+        </div>
+
+        <a href="{{ repo.html_url }}" target="_blank" class="btn btn-xs btn-primary self-center whitespace-nowrap">
+          View
+        </a>
       </div>
-      
-      <div class="flex flex-row container">
-        <p class="text-base-content capitalize">{{ repo.description or " " }}</p>
-        <button class="btn btn-primary w-fit h-fit pl-2 pr-2 ml-2 mr-3"><a href="{{ repo.html_url}}" target="_blank">See</a></but-fitton>
-      </div>
-      
+
     </div>
   </div>
 {% endfor %}
