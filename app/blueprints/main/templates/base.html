@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="abyss">
+<html lang="{{ g.current_lang }}" data-theme="abyss">
 <head>
   <meta charset="UTF-8">
+  <meta name="author" content="Paulo Victor">
+  <meta name="description" content="">
+  <meta name="keywords" content="Portfolio, Flask">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}Portfolio{% endblock %}</title>
   <link href="{{ url_for('main.static', filename='src/output.css') }}" rel="stylesheet">

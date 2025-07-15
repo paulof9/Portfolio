@@ -1,5 +1,5 @@
 <header class="w-full pt-5 pb-10 font-mono">
-  <div class="max-w-5xl mx-auto w-full grid grid-cols-1 sm:grid-cols-3 items-center px-4">
+  <div class="max-w-5xl mx-auto w-full grid grid-cols-1 sm:grid-cols-3 lg:max-w-7xl items-center px-4">
     <a href="/" 
        class="text-xl font-bold text-primary text-center sm:text-left">
       Paulo<span class="text-error">.</span>
@@ -22,9 +22,33 @@
             <span class="text-primary group-hover:text-primary-content transition">//</span> {{ _('contact') }}
           </a>
         </li>
+        {# <li>
+            {% if g.current_lang == 'en' %}
+                <a href="{{ url_for(request.endpoint, lang='pt', **request.view_args) }}" class="group text-error hover:text-error-content transition">
+                    <span class="text-primary group-hover:text-primary-content transition">//</span> Português
+                </a>
+            {% else %}
+                <a href="{{ url_for(request.endpoint, lang='en', **request.view_args) }}" class="group text-error hover:text-error-content transition">
+                    <span class="text-primary group-hover:text-primary-content transition">//</span> English
+                </a>
+            {% endif %}
+        </li> #}
       </ul>
     </nav>
 
-    <div class="hidden sm:block"></div>
+    <div class="flex justify-center sm:justify-end mt-4 sm:mt-0">
+        {% if g.current_lang == 'en' %}
+            <a href="{{ url_for(request.endpoint, lang='pt', **request.view_args) }}" 
+               class="text-primary hover:text-primary-content transition font-bold pr-2">
+                PT
+            </a>
+            <span class="text-error font-bold">EN</span> {% else %}
+            <span class="text-error font-bold pr-2">PT</span>
+            <a href="{{ url_for(request.endpoint, lang='en', **request.view_args) }}" 
+               class="text-primary hover:text-primary-content transition font-bold">
+                EN
+            </a>
+        {% endif %}
+    </div>
   </div>
 </header>
