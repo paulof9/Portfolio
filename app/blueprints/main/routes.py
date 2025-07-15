@@ -1,7 +1,8 @@
 from . import main
-from flask import render_template
-from flask import jsonify
+from flask import render_template, jsonify
 from app.blueprints.api.github import ReposList
+from flask_babel import _
+
 
 @main.route('/')
 def home():
@@ -43,3 +44,4 @@ def api_projects():
 def api_user():
     user = ReposList("paulof9").get_user()
     return jsonify(user), 200
+

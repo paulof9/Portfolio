@@ -1,0 +1,72 @@
+# Portuguese translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-07-14 20:52-0300\n"
+"PO-Revision-Date: 2025-07-14 20:25-0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: app/blueprints/main/templates/contact.html:11
+msgid "Available for select freelance opportunities"
+msgstr "Disponível para oportunidades freelance selecionadas"
+
+#: app/blueprints/main/templates/contact.html:12
+msgid "Send me an email or contact me via instant message!"
+msgstr "Envie-me um e-mail ou entre em contato por mensagem instantânea!"
+
+#: app/blueprints/main/templates/contact.html:20
+msgid "Send a Email"
+msgstr "Enviar um e-mail"
+
+#: app/blueprints/main/templates/contact.html:23
+msgid "Subject"
+msgstr "Assunto"
+
+#: app/blueprints/main/templates/contact.html:28
+msgid "Message"
+msgstr "Mensagem"
+
+#: app/blueprints/main/templates/contact.html:32
+msgid "Send"
+msgstr "Enviar"
+
+#: app/blueprints/main/templates/index.html:30
+msgid "Hi, i'm"
+msgstr "Olá, eu sou"
+
+#: app/blueprints/main/templates/index.html:31
+msgid "I'm a Software Developer"
+msgstr "Sou desenvolvedor de software"
+
+#: app/blueprints/main/templates/index.html:48
+msgid "Programming & Tools"
+msgstr "Programação e Ferramentas"
+
+#: app/blueprints/main/templates/components/cards.html:17
+msgid "View"
+msgstr "Ver"
+
+#: app/blueprints/main/templates/components/header.html:12
+msgid "home"
+msgstr "início"
+
+#: app/blueprints/main/templates/components/header.html:17
+msgid "projects"
+msgstr "projetos"
+
+#: app/blueprints/main/templates/components/header.html:22
+msgid "contact"
+msgstr "contato"
+

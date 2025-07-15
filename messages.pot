@@ -1,0 +1,71 @@
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-07-14 20:52-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: app/blueprints/main/templates/contact.html:11
+msgid "Available for select freelance opportunities"
+msgstr ""
+
+#: app/blueprints/main/templates/contact.html:12
+msgid "Send me an email or contact me via instant message!"
+msgstr ""
+
+#: app/blueprints/main/templates/contact.html:20
+msgid "Send a Email"
+msgstr ""
+
+#: app/blueprints/main/templates/contact.html:23
+msgid "Subject"
+msgstr ""
+
+#: app/blueprints/main/templates/contact.html:28
+msgid "Message"
+msgstr ""
+
+#: app/blueprints/main/templates/contact.html:32
+msgid "Send"
+msgstr ""
+
+#: app/blueprints/main/templates/index.html:30
+msgid "Hi, i'm"
+msgstr ""
+
+#: app/blueprints/main/templates/index.html:31
+msgid "I'm a Software Developer"
+msgstr ""
+
+#: app/blueprints/main/templates/index.html:48
+msgid "Programming & Tools"
+msgstr ""
+
+#: app/blueprints/main/templates/components/cards.html:17
+msgid "View"
+msgstr ""
+
+#: app/blueprints/main/templates/components/header.html:12
+msgid "home"
+msgstr ""
+
+#: app/blueprints/main/templates/components/header.html:17
+msgid "projects"
+msgstr ""
+
+#: app/blueprints/main/templates/components/header.html:22
+msgid "contact"
+msgstr ""
+
